@@ -26,5 +26,21 @@ app.post('/search', async (req, res) => {
   }  
 })
 
+app.post("/meal/download", async (req, res) => {
+  try {
+    // todo: validation
+    // fs.writeFileSync(`${req.body.label}.txt`, JSON.stringify(req.body, null, 2));
+    
+    // var blob = new Blob([JSON.stringify(req.body, null, 2)], {
+    //   type: "text/plain;charset=utf-8",
+    // });
+    // FileSaver.saveAs(blob, "solja.txt");
+
+    res.status(200).json({});
+  } catch (error) {
+    res.status(404).json({ message: error.message });
+  }
+});
+
 const port = process.env.PORT || 5000;
 app.listen(port);
