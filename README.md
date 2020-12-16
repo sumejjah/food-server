@@ -15,4 +15,4 @@ Please contact me to provide these variables. After adding .env file with correc
 npm install
 npm start
 ```
-The client will be running at: http://localhost:5000.
+The server will be running at: http://localhost:5000.
